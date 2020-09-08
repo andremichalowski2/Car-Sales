@@ -70,7 +70,7 @@
                   - [x] Route state and actions through props to components (from connect)
 
       3C - [x] - User should be able to add features to their car
-      3D - [ ] - User should be able to remove added features from their car
+      3D - [x] - User should be able to remove added features from their car
       3E - [ ] - Total should update as user adds and removes features from their car
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

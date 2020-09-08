@@ -19,9 +19,12 @@ const featureReducer = (state = initialState, actionObj) => {
   switch (actionObj.type) {
     case "ADD_FEATURE":
       return {...state, car: {...state.car, features: [...state.car.features, actionObj.payload]}}
-
-    case "REMOVE_FEATURE":
-      return state;
+    case "REMOVE_FEATURE": {
+      console.log(actionObj.payload);
+      const newFeaturesArr = state.car.features.filter(feature => feature !== actionObj.payload)
+      const newStateObj = {...state, car: {...state.car, features: newFeaturesArr}}
+      return newStateObj;
+    }
     default:
       return state;
   }
