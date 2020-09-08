@@ -31,11 +31,11 @@
 
       1B - ## Download Dependencies
             
-            - [ ] Push commits: git push origin `<firstName-lastName>`.
-            - [ ] Add your team lead as collaborator on Github.
-            - [ ] Download project dependencies by running `npm install`.
-            - [ ] Add the dependencies you will need to implement Redux, using **npm**.
-            - [ ] Start up the app using `npm start`.
+            - [X] Push commits: git push origin `<firstName-lastName>`.
+            - [X] Add your team lead as collaborator on Github.
+            - [X] Download project dependencies by running `npm install`.
+            - [X] Add the dependencies you will need to implement Redux, using **npm**.
+            - [x] Start up the app using `npm start`.
 
 ### Task 2: Planning
 
