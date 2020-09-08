@@ -18,9 +18,10 @@ export const initialState = {
 const featureReducer = (state = initialState, actionObj) => {
   switch (actionObj.type) {
     case "ADD_FEATURE":
-      return;
+      return {...state, car: {...state.car, features: [...state.car.features, actionObj.payload]}}
+
     case "REMOVE_FEATURE":
-      return;
+      return state;
     default:
       return state;
   }
