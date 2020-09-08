@@ -37,4 +37,12 @@ const App = () => {
   );
 };
 
-export default App;
+function mapStateToProps(state) {
+  return {
+    car: state.car,
+    additionFeatures: state.additionalFeatures,
+    additionalPrice: state.additionalPrice
+  }
+}
+
+export default connect(mapStateToProps, { PLACHOLDERFORACTION, PLACHOLDERFORACTION2})(App);

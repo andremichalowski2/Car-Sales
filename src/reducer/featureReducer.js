@@ -15,29 +15,12 @@ export const initialState = {
   ]
 };
 
-const featureReducer = (state = initialState, action) => {
-  switch (action.type) {
-    // case "ADD_MEMBER":
-    //   return {
-    //     ...state,
-    //     members: [...state.members, action.payload]
-    //   };
-    // // NEW CASE HERE
-    // case "TOGGLE_MEMBER":
-    //   // Each action type should use a different case.
-    //   const newMembers = state.members.map((member) => {
-    //     if (member.name === action.payload.name) {
-    //       // update member's dragon status
-    //       return {
-    //         ...member,
-    //         dragonStatus: !action.payload.dragonStatus
-    //       };
-    //     } else return member;
-    //   });
-    //   return {
-    //     ...state,
-    //     members: newMembers
-    //   };
+const featureReducer = (state = initialState, actionObj) => {
+  switch (actionObj.type) {
+    case "ADD_FEATURE":
+      return;
+    case "REMOVE_FEATURE":
+      return;
     default:
       return state;
   }

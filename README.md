@@ -62,6 +62,13 @@
 
       3A - [x] - Move the given state to the reducer as the initial state for the Redux store.
       3B - [ ] - Set up the Redux flow
+            - [x] Create store
+            - [x] Wrap App with Provider and pass store
+            - [x] Connect state with "Connect" and "mapStateToProps" 
+                  - [] Create actions file with actions
+                  - [] Pass action through connect
+                  - [] Route state through props to components
+
       3C - [ ] - User should be able to add features to their car
       3D - [ ] - User should be able to remove added features from their car
       3E - [ ] - Total should update as user adds and removes features from their car
