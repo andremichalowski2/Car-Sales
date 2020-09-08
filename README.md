@@ -60,7 +60,7 @@
 
 #### Task 3: _MVP Requirements:_
 
-      3A - [ ] - Move the given state to the reducer as the initial state for the Redux store.
+      3A - [x] - Move the given state to the reducer as the initial state for the Redux store.
       3B - [ ] - Set up the Redux flow
       3C - [ ] - User should be able to add features to their car
       3D - [ ] - User should be able to remove added features from their car
