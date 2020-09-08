@@ -61,13 +61,13 @@
 #### Task 3: _MVP Requirements:_
 
       3A - [x] - Move the given state to the reducer as the initial state for the Redux store.
-      3B - [ ] - Set up the Redux flow
+      3B - [x] - Set up the Redux flow
             - [x] Create store
             - [x] Wrap App with Provider and pass store
             - [x] Connect state with "Connect" and "mapStateToProps" 
-                  - [] Create actions file with actions
-                  - [] Pass action through connect
-                  - [] Route state through props to components
+                  - [x] Create actions file with actions
+                  - [x] Pass action through connect
+                  - [x] Route state and actions through props to components (from connect)
 
       3C - [ ] - User should be able to add features to their car
       3D - [ ] - User should be able to remove added features from their car
