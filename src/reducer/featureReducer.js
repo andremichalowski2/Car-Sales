@@ -15,14 +15,31 @@ export const initialState = {
   ]
 };
 
+//component > dispactchAction > reducer > backToComponent
+
 const featureReducer = (state = initialState, actionObj) => {
+  // debugger;
   switch (actionObj.type) {
     case "ADD_FEATURE":
-      return {...state, car: {...state.car, features: [...state.car.features, actionObj.payload]}}
+      console.log(actionObj.payload);
+      return {
+        ...state, 
+        // additionalPrice: 500000, 
+        additionalPrice: state.additionalPrice + actionObj.payload.price, 
+        car: {
+          ...state.car, 
+          features: [
+            ...state.car.features, 
+            actionObj.payload]}}
     case "REMOVE_FEATURE": {
       console.log(actionObj.payload);
       const newFeaturesArr = state.car.features.filter(feature => feature !== actionObj.payload)
-      const newStateObj = {...state, car: {...state.car, features: newFeaturesArr}}
+      const newStateObj = {
+        ...state,
+        additionalPrice: state.additionalPrice - actionObj.payload.price,
+        car: {
+          ...state.car, 
+          features: newFeaturesArr}}
       return newStateObj;
     }
     default:
